@@ -16,7 +16,7 @@ footer_text: >
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔥 # the emoji used as the favicon
-url: https://Elvin_Johnson.github.io # the base hostname & protocol for your site
+url: https://elvin_johnson.github.io # the base hostname & protocol for your site
 baseurl: #/al-folio # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -211,17 +211,17 @@ scholar:
 # Jekyll Responsive Images
 # -----------------------------------------------------------------------------
 
-responsive_image:
-  template: _includes/responsive_img.html
-  # Quality to use when resizing images.
-  default_quality: 80
-  sizes:
-    - width: 480
-    - width: 800
-    - width: 1400
-      quality: 90
-  # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size.
-  strip: true
+# responsive_image:
+#   template: _includes/responsive_img.html
+#   # Quality to use when resizing images.
+#   default_quality: 80
+#   sizes:
+#     - width: 480
+#     - width: 800
+#     - width: 1400
+#       quality: 90
+#   # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size.
+#   strip: true
 
 
 # -----------------------------------------------------------------------------
