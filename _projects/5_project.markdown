@@ -2,7 +2,7 @@
 layout: page
 title: Truck Load Optimization and Automation
 description: Truck load optimization and Automation for logistics
-img: /assets/img/truck load cover.jpg
+img: /assets/img/truck load cover.JPG
 importance: 3
 category: Internship
 ---
