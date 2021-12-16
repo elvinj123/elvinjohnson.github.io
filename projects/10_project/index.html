@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Elvin Johnson | blog</title>
+<title>Elvin Johnson | Voice Controlled Wheelchair</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -31,7 +31,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/elvin_johnson.github.io/assets/css/main.css">
-<link rel="canonical" href="/elvin_johnson.github.io/blog/">
+<link rel="canonical" href="/elvin_johnson.github.io/projects/10_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -82,18 +82,14 @@
         </li>
         
         <!-- Blog -->
-        <!-- <li class="nav-item active">
+        <!-- <li class="nav-item ">
           <a class="nav-link" href="/elvin_johnson.github.io/blog/">
             blog
-            
-            <span class="sr-only">(current)</span>
             
           </a>
         </li> -->
         
         <!-- Other pages -->
-        
-        
         
         
         
@@ -169,8 +165,8 @@
         
         
         
-          <div class = "toggle-container">
-            <a id = "light-toggle">
+          <div class="toggle-container">
+            <a id="light-toggle">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
             </a>
@@ -189,119 +185,41 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Elvin Johnson</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Voice Controlled Wheelchair</h1>
+    <p class="post-description">An IOT+Google assitant based voice controlled wheelchair</p>
+  </header>
+
+  <article>
+    <div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        <center>
+            <img class="img-fluid rounded z-depth-1" src="/elvin_johnson.github.io/assets/img/voice_controlled_cover.jpg" alt="" title="example image">
+            <div class="caption">
+                FIGURE 1: THE PROTOTYPE OF THE WHEELCHAIR
+            </div>
+        </center>
+    </div>
+</div>
+
+<p>Physically challenged people like those suffering from paralysis/handicapped or being unable to walk find it very difficult to perform basic tasks. They are in continuous need of someone’s help to move around freely. This project aims at ameliorating the aforementioned problem of dependency on others by allowing the patients to traverse independently with the help of an intelligent wheelchair that would be empowered to understand pre-coded voice commands.  All the person who is sitting on the wheelchair must have is a smartphone which could be held in the hand or fixed onto the wheelchair. It would have Google assistant and the IFTT application pre-installed on it. The person can then create personalized commands for basic operations like moving forward, backward, left, right, stop. Certain values would be assigned for all the basic commands using the IFTT app and the Google Assistant. In our model, the command forward was assigned a value of ‘1’, backward a value of ‘0’, right a value of ‘2’, left a value of ‘3’, stop a value of ’4’. Additional commands for speed adjustment were also created. While programming the RaspberryPi board(The board controlling the motors) values corresponding to each command were taken into account.</p>
+
+<p>The Pi board would respond to the voice commands by moving the wheelchair in specified direction as per the feed value fetched from an Adafruit_IO server using MQTT protocol over an internet connection. In this protocol, would be used wherein the Google Assistant acts as publisher, Adafruit IO as a broker and the Raspberry Pi as a subscriber. The patient would thus be able to easily control the motion of the wheelchair with minimum effort by using Google Assistant services for voice control. Also, an ultrasonic sensor was integrated into the wheelchair which would help to halt the wheelchair automatically upon detection of an unexpected obstacle within the specified safe limits.</p>
+
+<h5><b>Detailed Working of the MQTT protocol</b></h5>
+<p>For communication, we used Adafruit_IO services which is a free application that allows voice commands to be sent over the internet. Its working is based on the MQTT (Message Queuing Telemetry Transport) protocol.  MQTT depends on 4 basic concepts that are important:
+1) Publish/Subscribe
+2) Messages
+3) Topics
+4) Broker
+The first concept is the publish and subscribe system. In a publish and subscribe system, a device can publish a message on a topic, or it can be subscribed to a particular topic to receive messages. Messages are the information that you want to exchange between your devices. Whether it’s a command or data.  Topics are the way you register interest for incoming messages or how you specify where you want to publish the message. The broker is primarily responsible for receiving all messages, filtering the messages, decide who is interested in them and then publishing the message to all subscribed clients.</p>
+
+<p>In our case, we have used Google assistant which accepts voice commands. The IFTT app helps us assign values corresponding to each command. The voice commands are accepted and published onto the Adafruit_IO server. Thus, the Google assistant along with the IFTT application acts like the PUBLISHER in this case. For each voice command, a particular value is assigned beforehand as mentioned earlier. It publishes this specific value/integer onto the Adafruit Server corresponding to each command as and when the command is given via the assistant. Adafruit acts like the BROKER.</p>
+
+<p>Now, when the person gives a particular command, the wheelchair would respond accordingly. It would move just as a normal vehicle, but, with voice control. Also, the Ultrasonic sensor would stop the wheelchair in the instance where an unexpected object comes in front of it. It would override any command the user might give at that instant, thus, ensuring safety of the user.</p>
 
 
-  <ul class="post-list">
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/diagrams/">a post with diagrams</a>
-      </h3>
-      <p>an example of a blog post with diagrams</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        July 4, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/distill/">a distill-style blog post</a>
-      </h3>
-      <p>an example of a distill-style blog post and main elements</p>
-      <p class="post-meta"> 7 min read &nbsp; &middot; &nbsp;
-        May 22, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2020/github-metadata/">a post with github metadata</a>
-      </h3>
-      <p>a quick run down on accessing github metadata.</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        September 28, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/elvin_johnson.github.io/blog/category/sample-posts">
-              <i class="fas fa-tag fa-sm"></i> sample-posts</a> &nbsp;
-              
-            <a href="/elvin_johnson.github.io/blog/category/external-services">
-              <i class="fas fa-tag fa-sm"></i> external-services</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/elvin_johnson.github.io/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/elvin_johnson.github.io/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 
@@ -312,8 +230,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2021 Elvin  Johnson.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> 
+    © Copyright 2021 Elvin  Johnson.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> 
 
     
     

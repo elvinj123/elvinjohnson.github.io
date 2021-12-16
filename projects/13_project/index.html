@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Elvin Johnson | blog</title>
+<title>Elvin Johnson | MNIST Fashion dataset Classification</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -31,7 +31,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/elvin_johnson.github.io/assets/css/main.css">
-<link rel="canonical" href="/elvin_johnson.github.io/blog/">
+<link rel="canonical" href="/elvin_johnson.github.io/projects/13_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -82,18 +82,14 @@
         </li>
         
         <!-- Blog -->
-        <!-- <li class="nav-item active">
+        <!-- <li class="nav-item ">
           <a class="nav-link" href="/elvin_johnson.github.io/blog/">
             blog
-            
-            <span class="sr-only">(current)</span>
             
           </a>
         </li> -->
         
         <!-- Other pages -->
-        
-        
         
         
         
@@ -169,8 +165,8 @@
         
         
         
-          <div class = "toggle-container">
-            <a id = "light-toggle">
+          <div class="toggle-container">
+            <a id="light-toggle">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
             </a>
@@ -189,119 +185,51 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Elvin Johnson</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">MNIST Fashion dataset Classification</h1>
+    <p class="post-description">A deep learning based classifier that would classify the objects in the Fashion MNIST dataset using Pytorch</p>
+  </header>
 
+  <article>
+    <p>The main aim here was to build an artificial neural network based classifier that would help in the classification of objects (images) from the Fashion MNIST dataset. Pytorch was used for this. Each of the images in the dataset is a 28x28 pixel grayscale image, which when flattened gives a feature vector of length 784 each. Some of the sample images are as shown in the grid in Figure 1.</p>
 
-  <ul class="post-list">
-    
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        <center>
+            <img class="img-fluid rounded z-depth-1" src="/elvin_johnson.github.io/assets/img/fashion_mnist.jpg" alt="" title="example image">
+            <div class="caption">
+                FIGURE 1: SAMPLES FROM THE MNSIT DATASET
+            </div>
+        </center>
+    </div>
+</div>
 
-    
-    
-    
-    
+<h5><b>Data Preprocessing</b></h5>
+<p>Since Pytorch was used and dataset was a custom dataset, the <strong>len</strong> and the <strong>getitem</strong> methods that are inherited form the from Pytorch’s Dataset class were used for accessing the dataset. The <strong>len</strong> method returns the complete length of the dataset that is being read. On the other hand, the <strong>getitem</strong> accesses the data by index i.e, it accesses individual rows/samples in the dataset using the ‘index’ passed to it. In other words, it maps each row in the data to an index.</p>
 
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/diagrams/">a post with diagrams</a>
-      </h3>
-      <p>an example of a blog post with diagrams</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        July 4, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+<p>As part of preprocessing, I also applied transforms and augmentations to the images, these are very important as they help prevent overfitting and also help expand the dataset, with more variation. One of the more important transformations that help are scaling, especially, when it comes to images. Pixels range from 0 to 255 in their numeric values, and using these values without any normalization will cause the gradients to explode in some cases and become zero at other times. Hence, to avoid this, normalilzation is a must.</p>
 
-          
+<h5><b>Network Initialization</b></h5>
+<p>I learnt that initialization plays a very important role in deep learning. If the initilization is very bad, then the model might get stuck at a local minimum and might not give good accuracy. On the other hand, if the initilization is good, the model might coverge at a better minimum, giving good accuracy. In this problem, the Xavier intilization worked better than the normal random initialization of the model.</p>
 
-          
-    </p>
-    </li>
+<h5><b>Training and Testing</b></h5>
+<p>Once the above tasks were complete, I trained the model. Tuning had to be performed for hyperparameters such as the learning rate, the number of neurons in each layer etc. Also, the learning rate had to be reduced once in a while when the accuracy/loss would not improve much. Finally, the model had to be tested on unseen data. The final accuracy achieved was around 87%, with the use of Xavier initialization, transforms and augmentations.</p>
 
-    
+<h5><b>Visualization</b></h5>
+<p>Along with the visualization of the accuracy loss, the incoming weights for a node in the second layer of the neural network was visualized. It was observed that the incoming weights at each node somehow represents a pattern. It is amazing to see that the neurons learn some specific feature, as show below! Figure 2 shows the progressions of the incoming weights of the 50th node in the second layer over a range of 20 epochs. It can be seen that the patter it is looking form looks like a shirt/t-shirt (both of which were there in the dataset) .</p>
 
-    
-    
-    
-    
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        <center>
+            <img class="img-fluid rounded z-depth-1" src="/elvin_johnson.github.io/assets/img/nn_visualization.JPG" alt="" title="example image">
+            <div class="caption">
+                FIGURE 2: WEIGHT VISUALIZATION OF THE 50TH NODE IN THE SECOND LAYER
+            </div>
+        </center>
+    </div>
+</div>
 
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/distill/">a distill-style blog post</a>
-      </h3>
-      <p>an example of a distill-style blog post and main elements</p>
-      <p class="post-meta"> 7 min read &nbsp; &middot; &nbsp;
-        May 22, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2020/github-metadata/">a post with github metadata</a>
-      </h3>
-      <p>a quick run down on accessing github metadata.</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        September 28, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/elvin_johnson.github.io/blog/category/sample-posts">
-              <i class="fas fa-tag fa-sm"></i> sample-posts</a> &nbsp;
-              
-            <a href="/elvin_johnson.github.io/blog/category/external-services">
-              <i class="fas fa-tag fa-sm"></i> external-services</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/elvin_johnson.github.io/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/elvin_johnson.github.io/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 
@@ -312,8 +240,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2021 Elvin  Johnson.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> 
+    © Copyright 2021 Elvin  Johnson.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> 
 
     
     

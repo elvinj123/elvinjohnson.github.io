@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Elvin Johnson | blog</title>
+<title>Elvin Johnson | Detection of skin cancer using ML</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -31,7 +31,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/elvin_johnson.github.io/assets/css/main.css">
-<link rel="canonical" href="/elvin_johnson.github.io/blog/">
+<link rel="canonical" href="/elvin_johnson.github.io/projects/3_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -82,18 +82,14 @@
         </li>
         
         <!-- Blog -->
-        <!-- <li class="nav-item active">
+        <!-- <li class="nav-item ">
           <a class="nav-link" href="/elvin_johnson.github.io/blog/">
             blog
-            
-            <span class="sr-only">(current)</span>
             
           </a>
         </li> -->
         
         <!-- Other pages -->
-        
-        
         
         
         
@@ -169,8 +165,8 @@
         
         
         
-          <div class = "toggle-container">
-            <a id = "light-toggle">
+          <div class="toggle-container">
+            <a id="light-toggle">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
             </a>
@@ -189,119 +185,59 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Elvin Johnson</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Detection of skin cancer using ML</h1>
+    <p class="post-description">A machine learning based approach for detecting and classifier skin cancer using images</p>
+  </header>
+
+  <article>
+    <p>I completed the following project while interning at my undergraduate institute over the summer. The main objective of this project was to perform detection and classification of skin cancer using images. The approach followed was to construct deep learning based classifiers that would provide a two-fold utility whereby it would enable:</p>
+<ol>
+  <li>Identification of tumour (benign or malignant).</li>
+  <li>Classification of tumour into seven distinct categories (if malignant).</li>
+</ol>
+
+<p>Two classifiers were created, one to classify skin lesions as benign/malignant and another to classify it into one of the seven types of skin lesions, if found to be malignant. Figure 1 illustrates how a test will be carried out after taking a picture of the skin lesion and passing it through the two stages of the model.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <center>
+            <img class="img-fluid rounded z-depth-1" src="/elvin_johnson.github.io/assets/img/skin%20classifier%20cover.JPG" alt="" title="example image">
+        </center>
+    </div>
+</div>
+<div class="caption">
+    FIGURE 1: DETECTION PROCEDURE
+</div>
+
+<p>The dataset used to train the models consisted of dermoscopic images from HAM1000 Dataset (By International Skin Imaging Collaboration). The main responsibility that I had handled was to build and train the models. Back then, I had learnt that architectures like the InceptionV3, Resnet50, VGG16 etc, were state of the art image classification models, after having experimented with basic models. I used the above mentioned CNN models as base models and added custom layers to these models, to create a complete model.</p>
+
+<p>Also, after much research I found that using transfer learning was the most appropriate approach to follow, since they would help the model train faster and perform better. For this, the model was initialized using the pretrained weights obtained by trianing the model on the Imagenet (a huge data set of multiclass images) data set. Various models were then trained over a period of several days and the model that would classify the lesion as benign or malignant achieved an accuracy of 89% and the model that classified the image into one of the seven types showed and accuracy of 85%. I believe the accuracy could have been improved further, however, due to lack of sufficient compute power at that point, this was not possible.</p>
+
+<p>Figure 2 gives a pictures of the training and testing pipleline.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <center>
+            <img class="img-fluid rounded z-depth-1" src="/elvin_johnson.github.io/assets/img/detection%20of%20skin%20cancer%20process%201.JPG" alt="" title="example image">
+        </center>
+    </div>
+</div>
+<div class="caption">
+    FIGURE 2: TRAINING/TESTING PIPELINE
+</div>
+
+<h5><b>Final Takeaways</b></h5>
+<ol>
+  <li>This was the first project I had done in deep learning. From this project, I realized how powerful deep learning/machine learning and how it could impact human lives for the good.</li>
+  <li>
+<b>Using Transfer learning is a great help</b> when it comes to a classification problem. It not only improves model performance, but also helps in training a model faster.</li>
+  <li>In deep learning, there are no fixed set of rules that one could follow w.r.t the size/depth of the model, the number of neurons etc. Many factors, like the right architecture to be used can be understood only through trial and error. For eg, while adding custom layers to the model, I realized that some architectures perform well, while others do not.</li>
+  <li>When it comes to machine learning for medical/life critical applications, accuracy is of utmost importance. This was a challenge I had faced. An accuracy above 95% is a must, I feel for such applications. I realized that in such cases, multiple models could be trained and then vote for passing the final verdict in such cases. This would help reduce false negatives and false positives.</li>
+</ol>
 
 
-  <ul class="post-list">
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/diagrams/">a post with diagrams</a>
-      </h3>
-      <p>an example of a blog post with diagrams</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        July 4, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/distill/">a distill-style blog post</a>
-      </h3>
-      <p>an example of a distill-style blog post and main elements</p>
-      <p class="post-meta"> 7 min read &nbsp; &middot; &nbsp;
-        May 22, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2020/github-metadata/">a post with github metadata</a>
-      </h3>
-      <p>a quick run down on accessing github metadata.</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        September 28, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/elvin_johnson.github.io/blog/category/sample-posts">
-              <i class="fas fa-tag fa-sm"></i> sample-posts</a> &nbsp;
-              
-            <a href="/elvin_johnson.github.io/blog/category/external-services">
-              <i class="fas fa-tag fa-sm"></i> external-services</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/elvin_johnson.github.io/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/elvin_johnson.github.io/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 
@@ -312,8 +248,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2021 Elvin  Johnson.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> 
+    © Copyright 2021 Elvin  Johnson.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> 
 
     
     

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Elvin Johnson | blog</title>
+<title>Elvin Johnson | Truck Load Optimization and Automation</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -31,7 +31,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/elvin_johnson.github.io/assets/css/main.css">
-<link rel="canonical" href="/elvin_johnson.github.io/blog/">
+<link rel="canonical" href="/elvin_johnson.github.io/projects/5_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -82,18 +82,14 @@
         </li>
         
         <!-- Blog -->
-        <!-- <li class="nav-item active">
+        <!-- <li class="nav-item ">
           <a class="nav-link" href="/elvin_johnson.github.io/blog/">
             blog
-            
-            <span class="sr-only">(current)</span>
             
           </a>
         </li> -->
         
         <!-- Other pages -->
-        
-        
         
         
         
@@ -169,8 +165,8 @@
         
         
         
-          <div class = "toggle-container">
-            <a id = "light-toggle">
+          <div class="toggle-container">
+            <a id="light-toggle">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
             </a>
@@ -189,119 +185,52 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Elvin Johnson</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Truck Load Optimization and Automation</h1>
+    <p class="post-description">Truck load optimization and Automation for logistics</p>
+  </header>
 
+  <article>
+    <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/elvin_johnson.github.io/assets/img/protiviti-logo.jpg" alt="" title="example image">
+    </div>
+</div>
+<p>I completed this project while interning with <a href="https://www.protiviti.com/IN-en" target="_blank" rel="noopener noreferrer">Protiviti</a>. In this project, the focus was on cost optimization for a major steel pipe manufacturing company by efficiently  optimizing the truck loading process of steel pipes, by leveraging the power of Data science (AI/ML). For the comany, once the finished steel pipes were produced by the company, they were stored in their godown. From here, the goods were loaded onto specific trucks and trailers belonging to various vendors, depending on the size of the pipes and the delivery cost estimated by the vendors.</p>
 
-  <ul class="post-list">
-    
+<p>Until this project, all the pipes were loaded onto trucks in a random, inefficient manner, thus, leading to higher overall spend for resources and transportation. Hence, focus was on cost optimization by efficiently optimizing the truck loading process of steel pipes in two ways. First,  handling of all data which was done via manual entry of excel sheets previously, was streamlined and automated. Second, the transporters available for a particular delivery location were assessed based on factors. Once the vendors were selected, the trucks were loaded in a optimum fashion by efficiently clubbing orders for the same location, thus, saving the number of trucks. The project had other subprojects too, but my job was to work on the above 2 subprojects.</p>
 
-    
-    
-    
-    
+<h5><b>Overview of Truck loading procedure</b></h5>
+<p>The steel manufacturing plant receives orders from the sales team a few days before the beginning of each month. These orders are to be delivered to the customer over the entire month, until the order requirement was satisfied. Once the order requirement is received each month, the production team would tally the amount of orders already available in their stockyard and would determine the amount of manufacturing that needs to be done based on the balance amount. Once the month begins, based on the amount of production of each day, the stock that can be liquidated is updated daily. After this, the vendors/trucks are assigned and a person determines who the transporter would be, what would be the destination, how many vehicles would be needed, how much amount of material would be present in each truck, which orders could be combined into on vehicle etc.</p>
 
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/diagrams/">a post with diagrams</a>
-      </h3>
-      <p>an example of a blog post with diagrams</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        July 4, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+<p>As an intern, I was assigned various tasks in the tream. The truck loading process had to be automated in an optimized fashion and the data obtained had to be handled and put to use in an efficient manner. My initial work was to first, write code to clean, merge and maintain data that was required at each stage. Second, to write code to track the orders that were placed initially throughout, from the time of placing the order uptil the point of dispatch and to keep track pending amount for each order. Third, to write code to check the amount of materials available daily, and accordingly calculate the amount of material that could be sent each day. Fourthly, to write code to automatically assign a vehicle type based on the material to be delivered and to write code to automate the loading of a vehicle in an efficient manner to achieve cost saving, by clubbing orders in an optimized way based on their destinations, which was the crux of the project. These were the major tasks that I did, apart from others. In the end, I had to integrate all these tasks into a single code to bring the project to successful completion. The final automation process would generate a report daily, that would tell them the orders that need to be delivered, specifically how much amount, which vendor, the clubbing etc, thus, resulting a major reduction in resources needed.</p>
 
-          
+<h5><b>Key takeaways from this internship project</b></h5>
+<ol>
+  <li>
+<b>Data cleaning and that presentation of data into understandable/usable formats requires significant time and effort.</b> In this project, the data received was in the form of numerous excel sheets and majority of them were hand entries and were not system generated. This led to lack of consistency ans preparing was very difficult.</li>
+  <li>
+    <p><b>Gather whatever data you can get your hand on. It’s better to realize later that some data is not required than to miss out on data that could reduce time and effort at a later stage.</b></p>
+  </li>
+  <li>
+    <p><b>Always write code in a way that is understandable to others</b>, which makes it much easier for someone to cross verify your work at crucial points. Simply commenting wherever appropriate helps a lot.</p>
+  </li>
+  <li>
+    <p><b>Always write code in a way that it can be modified easily</b>, preferably use functions for various tasks. That way, its easier to make changes as and when the client requires, as the project evolves.</p>
+  </li>
+  <li>
+    <p><b>Keep documenting the client requirements at every meeting (especially details specific to your task)</b>, it helps to be able to refer back to some of the initial meeting documents instead of having to ask them about it again.</p>
+  </li>
+  <li>
+    <p><b>Always keeps others working on components of the same project updated about your work</b>, this will help eliminate compatibility issues at a later stage, when integrating.</p>
+  </li>
+  <li>
+    <p>I also learnt valuable lessons about <b>presenting the work done at each stage in a way that would be easy to understand</b>, for example, using flowcharts.</p>
+  </li>
+  <li>Apart from the above, I had to put the pandas library for Python to extensive use, and I learnt a lot. I also learnt valuable coding tips from seniors and colleagues.</li>
+</ol>
 
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2021/distill/">a distill-style blog post</a>
-      </h3>
-      <p>an example of a distill-style blog post and main elements</p>
-      <p class="post-meta"> 7 min read &nbsp; &middot; &nbsp;
-        May 22, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/elvin_johnson.github.io/blog/2020/github-metadata/">a post with github metadata</a>
-      </h3>
-      <p>a quick run down on accessing github metadata.</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        September 28, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/elvin_johnson.github.io/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/elvin_johnson.github.io/blog/category/sample-posts">
-              <i class="fas fa-tag fa-sm"></i> sample-posts</a> &nbsp;
-              
-            <a href="/elvin_johnson.github.io/blog/category/external-services">
-              <i class="fas fa-tag fa-sm"></i> external-services</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/elvin_johnson.github.io/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/elvin_johnson.github.io/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/elvin_johnson.github.io/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 
@@ -312,8 +241,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2021 Elvin  Johnson.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> 
+    © Copyright 2021 Elvin  Johnson.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> 
 
     
     
