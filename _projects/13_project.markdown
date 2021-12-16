@@ -37,7 +37,7 @@ Along with the visualization of the accuracy loss, the incoming weights for a no
 <div class="row justify-content-sm-center" >
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/nn_visualization.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/nn_visualization.JPG' | relative_url }}" alt="" title="example image"/>
             <div class="caption">
                 FIGURE 2: WEIGHT VISUALIZATION OF THE 50TH NODE IN THE SECOND LAYER
             </div>

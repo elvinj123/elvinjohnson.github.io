@@ -40,13 +40,13 @@ The following is a deepfake video of former president Barack Obama. In this vide
 Before being able to work on detection, we had to understand Generative Advarsarial Networks (GANS), which was one the major recent breakthroughs in deep learning that was misused to create deepfake videos. The following grid of images consists of human faces that never existed, which we generated using GANS. The NVIDIA DGX-1 AI SUPERCOMPUTER was used for this.  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img height="500" class="img-fluid rounded z-depth-1" src="{{ '/assets/img/gans1.jpg' | relative_url }}" alt="" title="example image"/>
+        <img height="500" class="img-fluid rounded z-depth-1" src="{{ '/assets/img/gans1.JPG' | relative_url }}" alt="" title="example image"/>
         <div class="caption">
         FIGURE 3: GRID OF GENERATED FACES
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img height="200" class="img-fluid rounded z-depth-1" src="{{ '/assets/img/gans2.jpg' | relative_url }}" alt="" title="example image"/>
+        <img height="200" class="img-fluid rounded z-depth-1" src="{{ '/assets/img/gans2.JPG' | relative_url }}" alt="" title="example image"/>
         <div class="caption">
         FIGURE 4: GRID OF GENERATED FACES
         </div>

@@ -2,7 +2,7 @@
 layout: page
 title: SVM's for the Molecular Biology Data Set
 description: An SVM classifier for the Molecular Biology (Splice-junction Gene Sequences) Data Set
-img: /assets/img/svm_cover1.jpg
+img: /assets/img/svm_cover1.JPG
 importance: 5
 category: Academic and Personal Projects
 ---

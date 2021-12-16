@@ -3,7 +3,7 @@ layout: page
 title: Crawlbot
 description: A Data Crawler to identify websites on given keywords from the web in areas of child and woman abuse, cyber bullying, etc.
  
-img: /assets/img/crawlbotcover.jpg
+img: /assets/img/crawlbotcover.JPG
 # redirect: https://unsplash.com
 importance: 2
 category: Academic and Personal Projects
@@ -27,7 +27,7 @@ Once the dataset was preprocessed and made ready, the next step was to train mod
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/crawlbot_accuracy_table.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/crawlbot_accuracy_table.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 </div>

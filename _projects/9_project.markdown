@@ -2,7 +2,7 @@
 layout: page
 title: Accident Detection and Alert system
 description: An smart accident alert system for saving lives
-img: /assets/img/accident detection and alert cover.jpg
+img: /assets/img/accident detection and alert cover.JPG
 importance: 8
 category: Academic and Personal Projects
 ---
@@ -30,7 +30,7 @@ One of the major cause of the accidents is the high speeding of vehicles. In mos
 <div class="row justify-content-sm-center" >
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/flowchart accident detection.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/flowchart accident detection.JPG' | relative_url }}" alt="" title="example image"/>
             <div class="caption">
                 FIGURE 2: FLOWCHART OF THE ALGORITHM
             </div>

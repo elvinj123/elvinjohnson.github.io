@@ -2,7 +2,7 @@
 layout: page
 title: The Eyewriter
 description: A wearable to enable paralysed individuals control a PC's cursor using their eyes
-img: /assets/img/eyewriter cover.jpg
+img: /assets/img/eyewriter cover.JPG
 importance: 6
 category: Academic and Personal Projects
 ---

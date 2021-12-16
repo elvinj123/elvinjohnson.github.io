@@ -2,7 +2,7 @@
 layout: page
 title: Detection of skin cancer using ML
 description: A machine learning based approach for detecting and classifier skin cancer using images   
-img: /assets/img/skin classifier cover.jpg
+img: /assets/img/skin classifier cover.JPG
 # redirect: https://unsplash.com
 importance: 4
 category: Internship
@@ -16,7 +16,7 @@ Two classifiers were created, one to classify skin lesions as benign/malignant a
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/skin classifier cover.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/skin classifier cover.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 </div>

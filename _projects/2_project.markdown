@@ -3,7 +3,7 @@ layout: page
 title: Image Analytics in Retail
 description: A Video/Image Analytics based approach towards providing a seamless Customer experience in the Retail sector
    
-img: /assets/img/image analytics cover.jpg
+img: /assets/img/image analytics cover.JPG
 # redirect: https://unsplash.com
 importance: 2
 category: Internship
@@ -39,7 +39,7 @@ Figure 2 below gives some miscellaneous examples of pairs of objects whose Cosin
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/use case 1 op1.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/use case 1 op1.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 
@@ -121,7 +121,7 @@ Figure 7 gives the comparison of the test accuracy of the various models that I 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/model_acc.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/model_acc.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 

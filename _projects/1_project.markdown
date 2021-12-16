@@ -42,7 +42,7 @@ To tackle the problem of low training data, I performed data augmentation. Also,
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/signature procedure.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/signature procedure.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 </div>
@@ -61,7 +61,7 @@ Step 1: Open the app by clicking the icon of the .bat file
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/page 1.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/page 1.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 </div>
@@ -73,7 +73,7 @@ Step 2:  Click on browse, and upload the document from which signatures are to b
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/page 2.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/page 2.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 </div>
@@ -84,7 +84,7 @@ Step 3: Click on Detect signatures and get the extracted signatures which can be
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/page 3.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/page 3.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 </div>
