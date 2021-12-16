@@ -33,7 +33,7 @@ Also, after much research I found that using transfer learning was the most appr
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <center>
-            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/detection of skin cancer process 1.jpg' | relative_url }}" alt="" title="example image"/>
+            <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/detection of skin cancer process 1.JPG' | relative_url }}" alt="" title="example image"/>
         </center>
     </div>
 </div>
